@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data
+data/raw/
+data/processed/
+
+# Model artifacts
+src/models/artifacts/
+
+# OS
+.DS_Store
+
+# Docker
+*.log

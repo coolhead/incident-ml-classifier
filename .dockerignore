@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+data/
+notebooks/
+.git/
+.gitignore
+src/models/artifacts/*.png
+src/models/artifacts/*.csv
+src/models/artifacts/*.json
