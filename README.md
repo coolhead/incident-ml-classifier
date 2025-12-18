@@ -12,7 +12,7 @@ Designed as an **early-warning system** for **rare incidents (~3% base rate)** w
 
 ---
 
-## Why this exists
+## Motivation
 
 Operational incidents are rare but high impact.
 Static rules don’t adapt and often miss emerging failure patterns.
@@ -23,6 +23,9 @@ This project demonstrates:
 * **Threshold tuning** to balance recall vs alert volume
 * **Explainability** for trust and debugging
 * **Production packaging** via API and Docker
+
+---
+![Precision–Recall Curve (Validation)](docs/pr_curve_val.png)
 
 ---
 
@@ -113,7 +116,7 @@ curl -s -X POST http://localhost:8000/predict \
 
 ---
 
-## Threshold Strategy (Important)
+## Threshold Strategy
 
 This is a **rare-event classifier**.
 The default `0.5` threshold is arbitrary and **not optimal**.
